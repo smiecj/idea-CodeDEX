@@ -12,7 +12,10 @@
 2、未添加的功能：修改CodeDEX；添加问题
 
 ### 学到的东西：
-1、停止加载直接用return
+1、停止加载直接用return。
+
+2、对于使用Statement来执行insert操作，不能通过execute方法的返回值来判断是否执行成功，而要用executeUpdate方法。
+[参考资料](http://blog.csdn.net/gavinloo/article/details/6890459)
 
 ### 参考网站
 [1、TortoiseGit配置密钥](http://blog.csdn.net/bendanbaichi1989/article/details/17916795)

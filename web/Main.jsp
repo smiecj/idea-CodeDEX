@@ -37,7 +37,7 @@ while (iterator.hasNext())
 	Question question = iterator.next();
 %>
 <li><strong>
-<a href="/CodeDEX/question.jsp?qid=<%=question.qid%>" >
+<a href="/question.jsp?qid=<%=question.qid%>" >
 <%
 	out.print(question.question);
 %>

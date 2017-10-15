@@ -25,6 +25,15 @@ if (null != qid)
 {
 	CodeDEX codeDEX = new CodeDEX("", question, description, solution, code);
 	boolean upload_success = uploadCodeDEX(codeDEX, qid);
+	if (upload_success)
+    {
+        out.print("<script>alert('上传codeDEX成功！');</script>");
+        out.print("<script>window.location.href='question.jsp?qid="+qid+"'</script>");
+    }
+    else
+    {
+        out.print("<script>alert('上传codeDEX失败！');</script>");
+    }
 }
 %>
 

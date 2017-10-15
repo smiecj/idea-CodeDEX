@@ -36,9 +36,12 @@ List<CodeDEX> getCodeDEXByQid(String qid)
 		String sql = "select cid from Question_CodeDEX where qid = " + qid;
 		state = conn.createStatement();
 		ResultSet resultSet_question = state.executeQuery(sql);
+		int size = resultSet_question.getFetchSize();
 		while (resultSet_question.next()) {
 			String cid = resultSet_question.getString("cid");
 			sql = "select * from CodeDEX where cid = " + cid;
+			// 注意！两次查询中间，需要重新创建SQL查询状态
+			state = conn.createStatement();
 			ResultSet resultSet_codeDEX = state.executeQuery(sql);
 			while (resultSet_codeDEX.next()) {
 				//cid = resultSet_codeDEX.getString("cid");

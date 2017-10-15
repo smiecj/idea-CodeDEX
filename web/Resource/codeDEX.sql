@@ -19,8 +19,8 @@ create table Question(
 create table CodeDEX(
 	cid int primary key auto_increment,
 	question varchar(25) not null UNIQUE,
-	description varchar(300),
-	solution varchar(300),
+	description varchar(300) not null,
+	solution varchar(300) not null,
 	code varchar(400)
 );
 

@@ -27,7 +27,7 @@ if (null == question)
 }
 %>
 
-<h3 id="add_codedex"><a href="/CodeDEX/upload_codedex.jsp?qid=<%=qid%>" >
+<h3 id="add_codedex"><a href="/upload_codedex.jsp?qid=<%=qid%>" >
 <font face="微软雅黑">没有找到你想查找的Codedex？点击这里添加</font></a></h3>
 
 <h2 id="这里是问题名字"><%=question.question %></h2>
@@ -45,7 +45,7 @@ while (iterator.hasNext())
 %>
 
 <li><strong>
-<a href="/CodeDEX/codedex.jsp?cid=<%=codeDEX.cid%>" >
+<a href="/codedex.jsp?cid=<%=codeDEX.cid%>" >
 <%=codeDEX.question %>
 </a></strong></li>
 
@@ -54,7 +54,7 @@ while (iterator.hasNext())
 %>
 </ul>
 
-<h3 id="add_codedex"><a href="/CodeDEX/upload_codedex.jsp?qid=<%=qid%>" >
+<h3 id="add_codedex"><a href="/upload_codedex.jsp?qid=<%=qid%>" >
 <font face="微软雅黑">没有找到你想查找的Codedex？点击这里添加</font></a></h3>
 
 </body>

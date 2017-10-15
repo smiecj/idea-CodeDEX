@@ -20,7 +20,7 @@ String qid = request.getParameter("qid");
 </h1>
 <label>
 <span>Name: </span>
-<input id="name" type="text" name="name" placeholder="输入CodeDEX名字" />
+<input id="name" type="text" name="question" placeholder="输入CodeDEX名字" />
 </label>
 <label>
 <span>Description</span>
