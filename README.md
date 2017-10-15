@@ -19,21 +19,23 @@
 [参考资料](http://blog.csdn.net/gavinloo/article/details/6890459)
 
 ### 参考网站
-[1、TortoiseGit配置密钥](http://blog.csdn.net/bendanbaichi1989/article/details/17916795)
+[1、Git-TortoiseGit配置密钥](http://blog.csdn.net/bendanbaichi1989/article/details/17916795)
 
-[2、TortoiseGit 上传到远端](http://blog.csdn.net/chenqiangdage/article/details/45958951)
+[2、Git-TortoiseGit 上传到远端](http://blog.csdn.net/chenqiangdage/article/details/45958951)
 
-[3、HTML表单设计](http://blog.csdn.net/hxh1994/article/details/42610481)
+[3、html-HTML表单设计](http://blog.csdn.net/hxh1994/article/details/42610481)
 
-[4、更好看的表单样式](http://www.laozuo.org/3495.html)
+[4、html-更好看的表单样式](http://www.laozuo.org/3495.html)
 
-[5、Haroopad-markdown编辑器](http://blog.csdn.net/wangshubo1989/article/details/53007104)
+[5、markdown-Haroopad-markdown编辑器](http://blog.csdn.net/wangshubo1989/article/details/53007104)
 
-[6、引入CSS样式](http://www.divcss5.com/rumen/r56.shtml)
+[6、html-引入CSS样式](http://www.divcss5.com/rumen/r56.shtml)
 
-[7、设置tomcat的起始页](https://zhidao.baidu.com/question/1989849001795555387.html)
+[7、idea-设置tomcat的起始页](https://zhidao.baidu.com/question/1989849001795555387.html)
 
 [8、idea-创建jsp工程](https://www.zhihu.com/question/35967146)
 
 [9、idea-将项目上传到git仓库](http://blog.csdn.net/autfish/article/details/52513465)
+
+[10、数据库-prepareStatement的可读性优势](http://blog.csdn.net/u011161786/article/details/48394751)
 
