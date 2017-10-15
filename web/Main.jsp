@@ -25,7 +25,8 @@ List<Question> list_question = getAllQuestion();
 <img src="Resource/01.jpg" alt="圣人惠"></p>
 
 <blockquote>
-  <p><font size="7" face="微软雅黑">没有找到你想搜索的问题？点击这里。 </font></p>
+    <p><a href="/upload_question.jsp"><font size="5" face="微软雅黑">没有找到你想搜索的问题？点击这里添加</font>
+    </a></p>
 </blockquote>
 
 <ul>
@@ -49,7 +50,8 @@ while (iterator.hasNext())
 </ul>
 
 <blockquote>
-  <p><font size="7" face="微软雅黑">没有找到你想搜索的问题？点击这里。 </font></p>
+    <p><a href="/upload_question.jsp"><font size="5" face="微软雅黑">没有找到你想搜索的问题？点击这里添加</font>
+    </a></p>
 </blockquote>
 </body>
 </html>
