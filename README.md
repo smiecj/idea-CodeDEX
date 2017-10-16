@@ -11,12 +11,13 @@
 1、添加存储codeDEX的页面，需要两个文件：提供输入框的upload_codedex.jsp，以及真正执行数据库的插入操作的upload.jsp（已完成）
 2、问题与codeDEX：添加问题，修改问题，修改codeDEX
 3、普通用户和超级用户（普通用户只能登录后查看，超级用户可以添加和修改）：数据库添加用户字段、login.jsp
+4、提交代码，看能不能用idle那种编辑器来提交
 
 ### 学到的东西：
 1、停止加载直接用return。
-
 2、对于使用Statement来执行insert操作，不能通过execute方法的返回值来判断是否执行成功，而要用executeUpdate方法。
 [参考资料](http://blog.csdn.net/gavinloo/article/details/6890459)
+
 
 ### 参考网站
 [1、Git-TortoiseGit配置密钥](http://blog.csdn.net/bendanbaichi1989/article/details/17916795)
