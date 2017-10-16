@@ -40,3 +40,7 @@
 
 [10、数据库-prepareStatement的可读性优势](http://blog.csdn.net/u011161786/article/details/48394751)
 
+[11、数据库-数据库插入时Incorrect string value问题](http://blog.csdn.net/u013651405/article/details/41701527)
+
+[12、数据库-character set 与 collation 的区别](http://zhongwei-leg.iteye.com/blog/899227)
+
