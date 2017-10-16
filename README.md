@@ -1,20 +1,30 @@
 # CodeDEX
 共享CodeDEX问题以及解决方法，我老婆镇楼
 ![圣人惠](https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/c75c10385343fbf29b60a7afb67eca8064388fe9.jpg)
+
 ### 目前存在的问题：
+
 1、首页，不需要获取Question所有的字段，可以把link单独取出来放到一个表中
 -> 后续：都不需要存储link，因为网页上显示的数据都从数据库加载，故使用同一个jsp文件加载codedex
 
 2、跳转到提交codeDEX的页面的时候，其实最好显示问题的描述。这样需要通过POST提交数据
 
 ### 任务：
+
 1、添加存储codeDEX的页面，需要两个文件：提供输入框的upload_codedex.jsp，以及真正执行数据库的插入操作的upload.jsp（已完成）
+
 2、问题与codeDEX：添加问题，修改问题，修改codeDEX
+
 3、普通用户和超级用户（普通用户只能登录后查看，超级用户可以添加和修改）：数据库添加用户字段、login.jsp
+
 4、提交代码，看能不能用idle那种编辑器来提交
 
+5、参数校验。特别是需要提交form表单的地方（比如提交问题、提交codeDEX），需要进行表单的数据校验：两种方法，用js校验，或者是提交之后在update.jsp中校验
+
 ### 学到的东西：
+
 1、停止加载直接用return。
+
 2、对于使用Statement来执行insert操作，不能通过execute方法的返回值来判断是否执行成功，而要用executeUpdate方法。
 [参考资料](http://blog.csdn.net/gavinloo/article/details/6890459)
 
