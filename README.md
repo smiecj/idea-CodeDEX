@@ -28,6 +28,10 @@
 2、对于使用Statement来执行insert操作，不能通过execute方法的返回值来判断是否执行成功，而要用executeUpdate方法。
 [参考资料](http://blog.csdn.net/gavinloo/article/details/6890459)
 
+### 需要加的内容
+1、第一页的界面，给用户看的，就应该是搜索的界面，比如按照id搜索
+2、支持从excel导入到数据库，也支持导出成msdn格式
+
 
 ### 参考网站
 [1、Git-TortoiseGit配置密钥](http://blog.csdn.net/bendanbaichi1989/article/details/17916795)
