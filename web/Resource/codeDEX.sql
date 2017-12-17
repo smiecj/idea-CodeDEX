@@ -2,44 +2,20 @@ use company;
 SET FOREIGN_KEY_CHECKS = 0;
 set unique_checks=0;
 
-drop table if exists Question;
 drop table if exists CodeDEX;
-drop table if exists Question_CodeDEX;
 
-# ÎÊÌâÀà±í
-# ÎÊÌâ¡¢ÃèÊö
-create table Question(
-	qid int primary key auto_increment,
-	question varchar(20) not null,
-	description varchar(300) not null
-);
-
-# codeDEX ±í
-# ÎÊÌâ¡¢ÃèÊö¡¢½â¾ö·½·¨¡¢´úÂë
+# codeDEX è¡¨
+# é—®é¢˜ã€æè¿°ã€ç­‰çº§ã€å…·ä½“æè¿°ã€è§£å†³æ–¹æ³•å’Œä»£ç ã€æ˜¯å¦å·²ç»è§£å†³
 create table CodeDEX(
-	cid int primary key auto_increment,
-	question varchar(25) not null UNIQUE,
+	cid int primary key,
+	checker varchar(50) not null UNIQUE,
+	level varchar(20) not null,
 	description varchar(300) not null,
-	solution varchar(300) not null,
-	code varchar(400)
-);
+	solution varchar(1000) not null,
+	isFix tinyint(1) not null
+)default character set utf8;
 
-# ÎÊÌâºÍcodeDEXÍâ¼ü
-create table Question_CodeDEX(
-	qid int,
-	cid int,
-	foreign key(qid) references Question(qid)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE,
-	foreign key(cid) references CodeDEX(cid)
-	ON DELETE CASCADE
-	ON UPDATE CASCADE
-);
-
-insert into Question values(1, 'ÓÃ»§ÊäÈë°²È«ÎÊÌâ', 'ÔÚÏîÄ¿ÖĞ£¬ÎÒÃÇ¿ÉÄÜÒªÖ´ĞĞÖ¸Áî¡¢²éÑ¯Êı¾İ¿âµÈ¡£¶ÔÕâĞ©²Ù×÷£¬ÎÒÃÇ±ØĞëÏÈ¼ì²éÓÃ»§µÄÊäÈë£¬±ÜÃâ¶ÔÖ´ĞĞ»úÔì³ÉÎ£º¦');
-insert into CodeDEX(question, description, solution, code) values('Command Injection', 'ÃüÁî×¢Èë£¬Ö´ĞĞµÄÖ¸ÁîÃ»ÓĞ¾­¹ı°²È«Ğ£Ñé', 
-	'ÖÆ×÷Ö¸Áî°×Ãûµ¥', 'Runtime.getRuntime().exec(command);');
-insert into Question_CodeDEX values(1, 1);
+insert into CodeDEX values(49614, 'FORWARD_NULL', 'Low', 'ç©ºæŒ‡é’ˆå¼‚å¸¸', '66666', 1);
 
 SET FOREIGN_KEY_CHECKS = 1;
 set unique_checks=1;
