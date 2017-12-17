@@ -30,7 +30,11 @@
 
 ### 需要加的内容
 1、第一页的界面，给用户看的，就应该是搜索的界面，比如按照id搜索
+
 2、支持从excel导入到数据库，也支持导出成msdn格式
+
+3、回去把获取文档接口、修改CodeDEX接口提供一下，另外把header修改一下，现在的数据库不太一样了
+[新的模板下载网址](http://fjdx.sc.chinaz.com/Files/DownLoad/moban/201406/chahua3345.rar)
 
 
 ### 参考网站
